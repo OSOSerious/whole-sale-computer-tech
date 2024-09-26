@@ -193,6 +193,11 @@
             border-radius: 5px;
             width: 220px;
             font-size: 1em;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        #newsletter input::placeholder {
+            color: #ccc;
         }
         #newsletter button {
             padding: 15px 30px;
@@ -566,6 +571,256 @@
             font-size: 0.9em;
         }
 
+        /* Data Recovery Estimator */
+        #data-recovery-estimator {
+            max-width: 500px;
+            margin: 0 auto 60px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+        }
+        #data-recovery-estimator h2 {
+            margin-bottom: 20px;
+            color: #b9975b;
+            text-align: center;
+        }
+        #data-recovery-estimator div {
+            margin-bottom: 15px;
+        }
+        #data-recovery-estimator label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ddd;
+        }
+        #data-recovery-estimator select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        #data-recovery-estimator button {
+            width: 100%;
+            padding: 10px;
+            background-color: #b9975b;
+            color: #1c1c1c;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #data-recovery-estimator button:hover {
+            background-color: #e0c68c;
+        }
+        #estimate-result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #3a3a3a;
+            border-radius: 4px;
+            color: #ddd;
+        }
+        #estimate-result p {
+            margin: 0;
+        }
+        #estimate-result .note {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        /* Chatbot */
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #chat-toggle {
+            background-color: #b9975b;
+            color: #1c1c1c;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #chat-toggle:hover {
+            background-color: #e0c68c;
+        }
+
+        #chat-window {
+            width: 300px;
+            height: 400px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        #chat-header {
+            background-color: #b9975b;
+            color: #1c1c1c;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #close-chat {
+            background: none;
+            border: none;
+            color: #1c1c1c;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        #chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #2a2a2a;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+
+        .user {
+            background-color: #b9975b;
+            color: #1c1c1c;
+            align-self: flex-end;
+        }
+
+        .bot {
+            background-color: #444;
+            color: #ddd;
+            align-self: flex-start;
+        }
+
+        #chat-input {
+            display: flex;
+            padding: 10px;
+            background-color: #2a2a2a;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        #user-input {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #444;
+            border-radius: 3px;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+
+        #user-input::placeholder {
+            color: #ccc;
+        }
+
+        #send-message {
+            background-color: #b9975b;
+            color: #1c1c1c;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #send-message:hover {
+            background-color: #e0c68c;
+        }
+
+        /* Product Catalog */
+        #product-catalog {
+            max-width: 1000px;
+            margin: 0 auto 60px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 5px;
+        }
+        #product-catalog h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b9975b;
+        }
+        #product-catalog .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        #product-catalog .tab-button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #ddd;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #product-catalog .tab-button.active {
+            background-color: #b9975b;
+            color: #1c1c1c;
+        }
+        #product-catalog .tab-button:hover {
+            background-color: #555;
+        }
+        #product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            background-color: #2a2a2a;
+        }
+        .product-card h3 {
+            margin-bottom: 10px;
+            color: #e0c68c;
+        }
+        .product-card .price {
+            font-weight: bold;
+            color: #b9975b;
+            margin-bottom: 10px;
+        }
+        .product-card .specs {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        .product-card button {
+            background-color: #b9975b;
+            color: #1c1c1c;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product-card button:hover {
+            background-color: #e0c68c;
+        }
+
         /* Responsive Design */
         @media (max-width: 1024px) {
             header h1 {
@@ -574,13 +829,13 @@
             #statistics .stat h3 {
                 font-size: 1.8em;
             }
-            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2 {
+            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2 {
                 font-size: 2.2em;
             }
             #hero h2 {
                 font-size: 2em;
             }
-            #hero p, #cta p, #ai-assistant .assistant-info p, #voip-service p, #contact p.additional-info {
+            #hero p, #cta p, #ai-assistant .assistant-info p, #voip-service p, #contact p.additional-info, #data-recovery-estimator label {
                 font-size: 1.1em;
             }
             #features .feature h3 {
@@ -609,11 +864,11 @@
             nav .menu-toggle {
                 display: block;
             }
-            #newsletter form {
+            #newsletter form, #data-recovery-estimator form, #product-catalog .tabs {
                 flex-direction: column;
                 align-items: center;
             }
-            #newsletter input, #newsletter button {
+            #newsletter input, #newsletter button, #data-recovery-estimator select, #data-recovery-estimator button, #product-catalog .tab-button {
                 width: 80%;
                 max-width: 300px;
             }
@@ -641,13 +896,13 @@
             #statistics .stat h3 {
                 font-size: 1.5em;
             }
-            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2 {
+            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2 {
                 font-size: 1.8em;
             }
             #hero h2 {
                 font-size: 1.8em;
             }
-            #hero p, #cta p, #ai-assistant .assistant-info p, #voip-service p, #contact p.additional-info {
+            #hero p, #cta p, #ai-assistant .assistant-info p, #voip-service p, #contact p.additional-info, #data-recovery-estimator label {
                 font-size: 1em;
             }
             #features .feature h3 {
@@ -744,6 +999,35 @@
         </div>
     </section>
 
+    <!-- Data Recovery Cost Estimator Section -->
+    <section id="data-recovery-estimator-section">
+        <div class="container">
+            <div id="data-recovery-estimator">
+                <h2>Data Recovery Cost Estimator</h2>
+                <div>
+                    <label for="device-type">Device Type:</label>
+                    <select id="device-type">
+                        <option value="">Select device type</option>
+                        <option value="hdd">Hard Disk Drive (HDD)</option>
+                        <option value="ssd">Solid State Drive (SSD)</option>
+                        <option value="raid">RAID Array</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="issue-type">Issue Type:</label>
+                    <select id="issue-type">
+                        <option value="">Select issue type</option>
+                        <option value="physical">Physical Damage</option>
+                        <option value="logical">Logical Failure</option>
+                        <option value="firmware">Firmware Issue</option>
+                    </select>
+                </div>
+                <button id="estimate-button">Estimate Cost</button>
+                <div id="estimate-result"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Main Content -->
     <main>
         <div class="container">
@@ -828,6 +1112,17 @@
                         <p>We prioritize your satisfaction with personalized service, ensuring every interaction meets your highest expectations.</p>
                     </div>
                 </div>
+            </section>
+
+            <!-- Product Catalog Section -->
+            <section id="product-catalog">
+                <h2>Our Product Catalog</h2>
+                <div class="tabs">
+                    <button class="tab-button active" data-category="laptops">Laptops</button>
+                    <button class="tab-button" data-category="desktops">Desktops</button>
+                    <button class="tab-button" data-category="servers">Servers</button>
+                </div>
+                <div id="product-list"></div>
             </section>
 
             <!-- AI Phone Assistant Section -->
@@ -975,7 +1270,23 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Navigation Toggle (Mobile Menu) and Testimonials Slider -->
+    <!-- Chatbot -->
+    <div id="chatbot">
+        <button id="chat-toggle">Chat with us</button>
+        <div id="chat-window" style="display: none;">
+            <div id="chat-header">
+                <h3>Customer Support</h3>
+                <button id="close-chat">&times;</button>
+            </div>
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navigation Toggle, Testimonials Slider, Data Recovery Estimator, Chatbot, and Product Catalog -->
     <script>
         // Navigation Toggle
         const menuToggle = document.querySelector('.menu-toggle');
@@ -983,6 +1294,14 @@
 
         menuToggle.addEventListener('click', () => {
             navUl.classList.toggle('active');
+        });
+
+        // Close the menu when a navigation link is clicked
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('active');
+            });
         });
 
         // Testimonials Slider
@@ -1004,7 +1323,7 @@
         // Initialize
         showTestimonial(currentIndex);
 
-        // Event Listeners
+        // Event Listeners for Testimonials
         prevButton.addEventListener('click', () => {
             currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
             showTestimonial(currentIndex);
@@ -1019,6 +1338,151 @@
         // setInterval(() => {
         //     nextButton.click();
         // }, 5000);
+
+        // Data Recovery Cost Estimator
+        document.addEventListener('DOMContentLoaded', () => {
+            const deviceType = document.getElementById('device-type');
+            const issueType = document.getElementById('issue-type');
+            const estimateButton = document.getElementById('estimate-button');
+            const estimateResult = document.getElementById('estimate-result');
+
+            estimateButton.addEventListener('click', () => {
+                let baseCost = 0;
+                
+                switch (deviceType.value) {
+                    case 'hdd':
+                        baseCost = 300;
+                        break;
+                    case 'ssd':
+                        baseCost = 400;
+                        break;
+                    case 'raid':
+                        baseCost = 800;
+                        break;
+                    default:
+                        baseCost = 0;
+                }
+
+                switch (issueType.value) {
+                    case 'physical':
+                        baseCost *= 1.5;
+                        break;
+                    case 'logical':
+                        baseCost *= 1.2;
+                        break;
+                    case 'firmware':
+                        baseCost *= 1.3;
+                        break;
+                    default:
+                        break;
+                }
+
+                const estimatedCost = Math.round(baseCost);
+
+                if (estimatedCost > 0) {
+                    estimateResult.innerHTML = `
+                        <p>Estimated Cost: $${estimatedCost}</p>
+                        <p class="note">This is a rough estimate. Actual cost may vary based on the complexity of the recovery.</p>
+                    `;
+                } else {
+                    estimateResult.innerHTML = '<p>Please select both device type and issue type for an estimate.</p>';
+                }
+            });
+        });
+
+        // Chatbot Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatToggle = document.getElementById('chat-toggle');
+            const chatWindow = document.getElementById('chat-window');
+            const closeChat = document.getElementById('close-chat');
+            const chatMessages = document.getElementById('chat-messages');
+            const userInput = document.getElementById('user-input');
+            const sendMessage = document.getElementById('send-message');
+
+            chatToggle.addEventListener('click', () => {
+                chatWindow.style.display = 'flex';
+                chatToggle.style.display = 'none';
+            });
+
+            closeChat.addEventListener('click', () => {
+                chatWindow.style.display = 'none';
+                chatToggle.style.display = 'block';
+            });
+
+            function addMessage(message, sender) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message', sender);
+                messageElement.textContent = message;
+                chatMessages.appendChild(messageElement);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function handleUserMessage() {
+                const message = userInput.value.trim();
+                if (message) {
+                    addMessage(message, 'user');
+                    userInput.value = '';
+                    
+                    // Simulate bot response
+                    setTimeout(() => {
+                        addMessage("Thank you for your message. A support representative will be with you shortly.", 'bot');
+                    }, 1000);
+                }
+            }
+
+            sendMessage.addEventListener('click', handleUserMessage);
+            userInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleUserMessage();
+                }
+            });
+        });
+
+        // Product Catalog Functionality
+        const products = {
+            laptops: [
+                { name: 'Refurbished Dell XPS 13', price: '$799', specs: '13" FHD, i7, 16GB RAM, 512GB SSD' },
+                { name: 'Refurbished MacBook Pro', price: '$1199', specs: '15" Retina, i7, 16GB RAM, 1TB SSD' },
+            ],
+            desktops: [
+                { name: 'Refurbished HP Pavilion', price: '$599', specs: 'i5, 8GB RAM, 256GB SSD, 1TB HDD' },
+                { name: 'Refurbished iMac', price: '$999', specs: '27" 5K, i5, 8GB RAM, 256GB SSD' },
+            ],
+            servers: [
+                { name: 'Refurbished Dell PowerEdge R640', price: '$1999', specs: 'Dual Xeon Silver, 64GB RAM, 4x 600GB SAS' },
+                { name: 'Refurbished HP ProLiant DL380 Gen10', price: '$2499', specs: 'Dual Xeon Gold, 128GB RAM, 8x 900GB SAS' },
+            ],
+        };
+
+        function createProductCard(product) {
+            return `
+                <div class="product-card">
+                    <h3>${product.name}</h3>
+                    <p class="price">${product.price}</p>
+                    <p class="specs">${product.specs}</p>
+                    <button>Learn More</button>
+                </div>
+            `;
+        }
+
+        function displayProducts(category) {
+            const productList = document.getElementById('product-list');
+            productList.innerHTML = products[category].map(createProductCard).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    displayProducts(button.dataset.category);
+                });
+            });
+
+            // Display laptops by default
+            displayProducts('laptops');
+        });
     </script>
 </body>
 </html>
