@@ -460,13 +460,21 @@
             margin: 0 auto;
         }
         #certified-partners .partner {
-            flex: 1 1 150px;
-            max-width: 150px;
+            flex: 1 1 200px;
+            max-width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
         }
-        #certified-partners .partner img {
-            width: 100%;
-            height: auto;
-            filter: brightness(0) invert(1); /* Makes logos white for dark backgrounds */
+        #certified-partners .partner h3 {
+            font-size: 1.5em;
+            color: #e0c68c;
+            margin-bottom: 10px;
+        }
+        #certified-partners .partner p {
+            font-size: 1em;
+            color: #ddd;
         }
 
         /* Call to Action Section */
@@ -487,6 +495,12 @@
             max-width: 800px;
             margin: 0 auto 30px auto;
         }
+        #cta .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        }
         #cta .cta-buttons a {
             padding: 15px 30px;
             background-color: #b9975b;
@@ -495,6 +509,8 @@
             font-size: 1em;
             margin: 10px;
             transition: background-color 0.3s ease;
+            min-width: 200px; /* Ensure buttons are at least this wide */
+            text-align: center;
         }
         #cta .cta-buttons a:hover {
             background-color: #e0c68c;
@@ -679,8 +695,8 @@
             <h2>Unlock Premium Technology Solutions</h2>
             <p>Experience top-tier refurbished laptops, desktops, and servers combined with expert data recovery and comprehensive tech services. Elevate your business or personal tech with our reliable and high-performance products.</p>
             <div class="cta-buttons">
-                <a href="#products-sales">Explore Products</a>
-                <a href="#contact">Get in Touch</a>
+                <a href="#products-sales">Browse Products</a>
+                <a href="#contact">Contact Us Today</a>
             </div>
         </div>
     </section>
@@ -756,17 +772,24 @@
                 <h2>Computer and Technology Services</h2>
                 <ul>
                     <li><strong>Data Recovery:</strong> Expertise in recovering data from damaged hard drives, RAIDs, tapes, and flash drives. We also specialize in forensic data recovery, ensuring your data is retrieved securely and efficiently.</li>
-                    <li><strong>Mac Repairs:</strong> Comprehensive Mac repair services including screen replacements, memory upgrades, solid-state drive replacements, and more, performed by certified technicians.</li>
-                    <li><strong>Board-Level Laptop Repair:</strong> Advanced services such as RAM upgrades, power jack repairs, and soldering, ensuring your laptop's motherboard is functioning flawlessly.</li>
-                    <li><strong>Hard Drive Upgrades:</strong> Mechanical-to-solid-state drive upgrades to enhance computer performance, providing faster boot times and improved overall speed.</li>
-                    <li><strong>Cabling Services/Cable Installations:</strong> Professional installation of CAT6, CAT5e, Plenum, and fiber optic cabling, tailored to meet your networking and infrastructure needs.</li>
-                    <li><strong>Drive Imaging:</strong> Reliable internal and external drive imaging solutions to ensure your data is accurately backed up and transferable.</li>
-                    <li><strong>Cloud Backup:</strong> Offering a full range of cloud backup solutions to keep your data safe and accessible from anywhere.</li>
+                    <li><strong>Mac Authorized Repairs:</strong> Screen replacement, memory upgrades, solid-state drive upgrades/replacements, performed by certified technicians.</li>
+                    <li><strong>Cabling Services/Cable Installations:</strong> We cover all of your cabling needs including CAT6, CAT5e, Plenum, and fiber optic installations.</li>
+                    <li><strong>BDR (Backup Disaster Recovery Device):</strong> We offer complete backup disaster device installations to safeguard your data.</li>
+                    <li><strong>Free Repair Diagnosis:</strong> Bring in your system, server, or laptop for a free repair diagnosis.</li>
+                    <li><strong>Custom Built Systems:</strong> Laptops, servers—give us your wish list, and your wish is our command.</li>
+                    <li><strong>Drive Imaging:</strong> We offer a full range of drive imaging services: internal-internal, internal-external, external-internal.</li>
+                    <li><strong>Cloud Backup:</strong> We offer a full range of cloud backup solutions.</li>
+                    <li><strong>Board-Level Laptop Repair:</strong> RAM upgrade, solid-state upgrade, power jack repair, full soldering service.</li>
                     <li><strong>Hosted Email:</strong> We offer a wide range of hosted email services to cover all of your needs.</li>
                     <li><strong>Maintenance Contracts:</strong> Hardware maintenance contracts along with extended hardware warranties to ensure your systems are always up-to-date and functioning optimally.</li>
                     <li><strong>Remote Support Services:</strong> Comprehensive remote tech support for clients, providing quick and effective solutions without the need for onsite visits.</li>
                     <li><strong>Rebuild RAID-Arrays:</strong> If a drive or multiple drives fail in your RAID array, we can rebuild it for you, restoring your data and ensuring system reliability.</li>
                     <li><strong>Data Transfer:</strong> We offer comprehensive data transfer services from drive to drive or drive to cloud, ensuring your data is always accessible.</li>
+                    <li><strong>Security Systems/Cameras:</strong> Installation and support of complete security systems.</li>
+                    <li><strong>Cell Phone/Tablet Repairs:</strong> Full-service repairs for all cell phones and tablets.</li>
+                    <li><strong>Onsite Services:</strong> Onsite repairs and installations, whatever your needs are.</li>
+                    <li><strong>Secure Email:</strong> Full hosted services available.</li>
+                    <li><strong>Solid-State Drive Upgrade:</strong> Upgrade your existing computer from a standard mechanical hard drive to a solid-state drive.</li>
                 </ul>
             </section>
 
@@ -837,16 +860,20 @@
                 <h2>We Are Certified Partners</h2>
                 <div class="partners-grid">
                     <div class="partner">
-                        <img src="https://via.placeholder.com/150x80?text=Dell+Logo" alt="Dell Partner">
+                        <h3>Dell Partner</h3>
+                        <p>🤝 Partnered with Dell to provide top-quality products.</p>
                     </div>
                     <div class="partner">
-                        <img src="https://via.placeholder.com/150x80?text=HP+Logo" alt="HP Partner">
+                        <h3>HP Partner</h3>
+                        <p>🤝 Collaborating with HP for exceptional services.</p>
                     </div>
                     <div class="partner">
-                        <img src="https://via.placeholder.com/150x80?text=Lenovo+Logo" alt="Lenovo Partner">
+                        <h3>Lenovo Partner</h3>
+                        <p>🤝 Official Lenovo partner for reliable solutions.</p>
                     </div>
                     <div class="partner">
-                        <img src="https://via.placeholder.com/150x80?text=Microsoft+Logo" alt="Microsoft Partner">
+                        <h3>Microsoft Partner</h3>
+                        <p>🤝 Certified Microsoft partner for advanced technologies.</p>
                     </div>
                 </div>
             </section>
@@ -896,6 +923,15 @@
             <div class="testimonial">
                 <p>"From purchasing refurbished servers to setting up our network cabling, Wholesale Computer Tech has been an invaluable partner in our IT infrastructure."</p>
                 <div class="author">- Karen S.</div>
+            </div>
+            <!-- Additional Testimonials -->
+            <div class="testimonial">
+                <p>"Let me say, the absolute nicest, personable, knowledgeable, honest owner/operator named Preston. My boyfriend's business computer needed fixed and he did so in an hour and made us feel so welcome and comfortable!!! He has our business from now on and I will spread the word!"</p>
+                <div class="author">- Melissa K.</div>
+            </div>
+            <div class="testimonial">
+                <p>"Wholesale Computer Tech's remote support services have been a lifesaver. They resolve issues quickly without the need for an onsite visit."</p>
+                <div class="author">- Jason F.</div>
             </div>
         </div>
         <!-- Navigation Arrows -->
