@@ -370,75 +370,6 @@
             top: 0;
         }
 
-        /* Testimonials Section */
-        #testimonials {
-            padding: 60px 20px;
-            background-color: #1a1a1a;
-            text-align: center;
-        }
-        #testimonials h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #b9975b;
-            letter-spacing: 1px;
-        }
-        #testimonials .testimonial-slider {
-            position: relative;
-            display: flex;
-            overflow: hidden;
-            gap: 30px;
-            padding-bottom: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        #testimonials .testimonial {
-            background-color: #2a2a2a;
-            padding: 30px;
-            border-radius: 10px;
-            min-width: 300px;
-            flex: 0 0 100%;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-            opacity: 0;
-            transform: translateX(100%);
-        }
-        #testimonials .testimonial.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        #testimonials .testimonial p {
-            font-size: 1em;
-            color: #ddd;
-            margin-bottom: 15px;
-        }
-        #testimonials .testimonial .author {
-            font-size: 1.1em;
-            color: #e0c68c;
-            font-weight: bold;
-        }
-        /* Navigation Arrows */
-        #testimonials .prev, #testimonials .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(185, 151, 91, 0.8);
-            border: none;
-            color: #1c1c1c;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            font-size: 1.5em;
-            transition: background-color 0.3s ease;
-        }
-        #testimonials .prev:hover, #testimonials .next:hover {
-            background-color: #e0c68c;
-        }
-        #testimonials .prev {
-            left: -50px;
-        }
-        #testimonials .next {
-            right: -50px;
-        }
-
         /* Certified Partners Section */
         #certified-partners {
             padding: 60px 20px;
@@ -514,6 +445,75 @@
         }
         #cta .cta-buttons a:hover {
             background-color: #e0c68c;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            padding: 60px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+        #testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #b9975b;
+            letter-spacing: 1px;
+        }
+        #testimonials .testimonial-slider {
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            gap: 30px;
+            padding-bottom: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #testimonials .testimonial {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            min-width: 300px;
+            flex: 0 0 100%;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        #testimonials .testimonial.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        #testimonials .testimonial p {
+            font-size: 1em;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+        #testimonials .testimonial .author {
+            font-size: 1.1em;
+            color: #e0c68c;
+            font-weight: bold;
+        }
+        /* Navigation Arrows */
+        #testimonials .prev, #testimonials .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(185, 151, 91, 0.8);
+            border: none;
+            color: #1c1c1c;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease;
+        }
+        #testimonials .prev:hover, #testimonials .next:hover {
+            background-color: #e0c68c;
+        }
+        #testimonials .prev {
+            left: -50px;
+        }
+        #testimonials .next {
+            right: -50px;
         }
 
         /* Contact Section */
@@ -628,6 +628,10 @@
             }
             #testimonials .prev, #testimonials .next {
                 display: none; /* Hide arrows on smaller screens */
+            }
+            /* Reduce gaps and adjust padding to minimize empty space */
+            #testimonials {
+                padding-bottom: 40px;
             }
         }
         @media (max-width: 480px) {
