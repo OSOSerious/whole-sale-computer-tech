@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wholesale Computer Tech | Premium Refurbished Computers & Technology Services</title>
     <meta name="description" content="Wholesale Computer Tech offers high-quality refurbished laptops, desktops, servers, and comprehensive data recovery services in Miami and Fort Lauderdale, FL.">
     <meta name="keywords" content="Refurbished Computers, Data Recovery, Mac Repairs, Gaming Computers, VoIP Services, Fort Lauderdale, Miami">
+    
+    <!-- Styles -->
     <style>
         /* Reset and Base Styles */
         * {
@@ -829,7 +832,7 @@
             #statistics .stat h3 {
                 font-size: 1.8em;
             }
-            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2 {
+            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2, #feature-comparison h2, #interactive-demo h2, #faq h2, #sign-up-form h2, #additional-services h2, #case-studies h2 {
                 font-size: 2.2em;
             }
             #hero h2 {
@@ -896,7 +899,7 @@
             #statistics .stat h3 {
                 font-size: 1.5em;
             }
-            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2 {
+            #newsletter h2, #features h2, #testimonials h2, #cta h2, #contact h2, #ai-assistant h2, #voip-service h2, #certified-partners h2, #product-catalog h2, #feature-comparison h2, #interactive-demo h2, #faq h2, #sign-up-form h2, #additional-services h2, #case-studies h2 {
                 font-size: 1.8em;
             }
             #hero h2 {
@@ -914,6 +917,181 @@
             #voip-service ul li::before {
                 content: "☎️";
             }
+        }
+
+        /* Subscription Catalog Styles */
+        /* Currently not used, but can be added here if needed */
+
+        /* FAQ Section Styles */
+        #faq {
+            padding: 60px 20px;
+            background-color: #2e2e2e;
+        }
+        #faq h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #b9975b;
+            font-size: 2.5em;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            color: #e0c68c;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .faq-item p {
+            color: #ddd;
+            font-size: 1em;
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Case Studies Section Styles */
+        #case-studies {
+            padding: 60px 20px;
+            background-color: #1c1c1c;
+        }
+        #case-studies h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #b9975b;
+            font-size: 2.5em;
+        }
+        .case-study {
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+        .case-study h3 {
+            color: #e0c68c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .case-study p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Feature Comparison Table Styles */
+        #feature-comparison {
+            padding: 60px 20px;
+            background-color: #2e2e2e;
+        }
+        #feature-comparison h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #b9975b;
+            font-size: 2.5em;
+        }
+        #plan-comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            color: #ddd;
+        }
+        #plan-comparison-table th, #plan-comparison-table td {
+            border: 1px solid #444;
+            padding: 15px;
+            text-align: center;
+        }
+        #plan-comparison-table th {
+            background-color: #1a1a1a;
+            color: #e0c68c;
+        }
+        #plan-comparison-table td {
+            background-color: #1c1c1c;
+        }
+
+        /* Sign-Up Form Styles */
+        #sign-up-form {
+            padding: 60px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+        #sign-up-form h2 {
+            color: #b9975b;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        #sign-up-form form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #sign-up-form input, #sign-up-form textarea, #sign-up-form select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+        #sign-up-form button {
+            padding: 15px 30px;
+            background-color: #b9975b;
+            border: none;
+            border-radius: 5px;
+            color: #1c1c1c;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #sign-up-form button:hover {
+            background-color: #e0c68c;
+        }
+
+        /* Interactive Demo Section Styles */
+        #interactive-demo {
+            padding: 60px 20px;
+            background-color: #1c1c1c;
+            text-align: center;
+        }
+        #interactive-demo h2 {
+            color: #b9975b;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        #interactive-demo video, #interactive-demo iframe {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin: 0 auto;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Additional Services Section Styles */
+        #additional-services {
+            padding: 60px 20px;
+            background-color: #2e2e2e;
+        }
+        #additional-services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #b9975b;
+            font-size: 2.5em;
+        }
+        #additional-services ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        #additional-services ul li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #ddd;
+            font-size: 1.1em;
+        }
+        #additional-services ul li::before {
+            content: "✔️";
+            position: absolute;
+            left: 0;
+            color: #b9975b;
+            font-size: 1.5em;
+            top: -2px;
         }
     </style>
 </head>
@@ -1114,6 +1292,120 @@
                 </div>
             </section>
 
+            <!-- Feature Comparison Table Section -->
+            <section id="feature-comparison">
+                <h2>Compare Our Plans</h2>
+                <table id="plan-comparison-table">
+                    <tr>
+                        <th>Features</th>
+                        <th>Basic</th>
+                        <th>Pro</th>
+                        <th>Enterprise</th>
+                    </tr>
+                    <tr>
+                        <td>AI Interactions per Month</td>
+                        <td>500</td>
+                        <td>2,000</td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr>
+                        <td>Support Channels</td>
+                        <td>Email, Chat</td>
+                        <td>Email, Chat, Phone</td>
+                        <td>All Channels + Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Human Support Backup</td>
+                        <td>Next Business Day</td>
+                        <td>Same Day</td>
+                        <td>Priority (4-hour response)</td>
+                    </tr>
+                    <tr>
+                        <td>Custom AI Training</td>
+                        <td>Standard</td>
+                        <td>Advanced</td>
+                        <td>Extensive</td>
+                    </tr>
+                    <tr>
+                        <td>Integrations</td>
+                        <td>None</td>
+                        <td>1 Platform</td>
+                        <td>Multiple Platforms</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Interactive Demo Section -->
+            <section id="interactive-demo">
+                <h2>Experience Our AI Help Desk</h2>
+                <!-- Replace with actual video or interactive demo -->
+                <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+            </section>
+
+            <!-- Detailed FAQs Section -->
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What is the AI Help Desk?</h3>
+                    <p>Our AI Help Desk is an intelligent assistant designed to handle up to 75% of common technical issues, providing quick and efficient support to your customers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does the AI assistant handle complex issues?</h3>
+                    <p>The AI assistant uses advanced algorithms and machine learning to understand and resolve complex issues. If it cannot resolve an issue, it seamlessly transfers the customer to a human agent.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if the AI can't resolve my problem?</h3>
+                    <p>If the AI assistant is unable to resolve your problem, it will connect you with a human support representative to ensure your issue is addressed promptly.</p>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </section>
+
+            <!-- Sign-Up or Contact Form Section -->
+            <section id="sign-up-form">
+                <h2>Get Started with Our AI Help Desk</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="company" placeholder="Company Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <select name="plan" required>
+                        <option value="">Select Plan</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Pro">Pro</option>
+                        <option value="Enterprise">Enterprise</option>
+                    </select>
+                    <textarea name="message" placeholder="Your Message or Specific Requirements"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Additional Services Section -->
+            <section id="additional-services">
+                <h2>Our Comprehensive Services</h2>
+                <ul>
+                    <!-- List all the additional services provided -->
+                    <li>Data Recovery Services</li>
+                    <li>Mac Authorized Repairs</li>
+                    <li>Cabling Services/Cable Installations</li>
+                    <li>Backup Disaster Recovery Device Installation</li>
+                    <li>Free Repair Diagnosis</li>
+                    <li>Custom Built Systems</li>
+                    <li>Drive Imaging Services</li>
+                    <li>Cloud Backup Solutions</li>
+                    <li>Board-Level Laptop Repair</li>
+                    <li>Hosted Email Services</li>
+                    <li>Maintenance Contracts</li>
+                    <li>Remote Support Services</li>
+                    <li>RAID Array Rebuild</li>
+                    <li>Data Transfer Services</li>
+                    <li>Security Systems/Cameras Installation</li>
+                    <li>Cell Phone/Tablet Repairs</li>
+                    <li>Onsite Services</li>
+                    <li>Secure Email Services</li>
+                    <li>Solid-State Drive Upgrades</li>
+                </ul>
+            </section>
+
             <!-- Product Catalog Section -->
             <section id="product-catalog">
                 <h2>Our Product Catalog</h2>
@@ -1175,6 +1467,16 @@
                         <p>🤝 Certified Microsoft partner for advanced technologies.</p>
                     </div>
                 </div>
+            </section>
+
+            <!-- Case Studies Section -->
+            <section id="case-studies">
+                <h2>Success Stories</h2>
+                <div class="case-study">
+                    <h3>Case Study: Enhancing Customer Support with AI</h3>
+                    <p>Discover how XYZ Company reduced their customer support response time by 50% using our AI Help Desk solution, leading to increased customer satisfaction and retention.</p>
+                </div>
+                <!-- Add more case studies as needed -->
             </section>
         </div>
     </main>
@@ -1334,11 +1636,6 @@
             showTestimonial(currentIndex);
         });
 
-        // Optional: Auto Slide
-        // setInterval(() => {
-        //     nextButton.click();
-        // }, 5000);
-
         // Data Recovery Cost Estimator
         document.addEventListener('DOMContentLoaded', () => {
             const deviceType = document.getElementById('device-type');
@@ -1482,6 +1779,15 @@
 
             // Display laptops by default
             displayProducts('laptops');
+
+            // FAQ Toggle Functionality
+            const faqItems = document.querySelectorAll('.faq-item h3');
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const answer = item.nextElementSibling;
+                    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                });
+            });
         });
     </script>
 </body>
