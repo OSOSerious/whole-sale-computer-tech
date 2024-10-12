@@ -12,10 +12,13 @@
 <style>
   header {
     background-color: #1a1a1a;
-    padding: 100px 20px;
+    padding: 120px 20px 80px;
     text-align: center;
     position: relative;
     margin-top: 60px;
+    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('/images/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   header::after {
@@ -31,26 +34,32 @@
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 4.8em;
+    font-weight: bold;
     margin-bottom: 20px;
     color: #b9975b;
     letter-spacing: 2px;
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: #e0c68c;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
   }
 
   @media (max-width: 768px) {
+    header {
+      padding: 100px 20px 60px;
+    }
+
     h1 {
-      font-size: 3em;
+      font-size: 3.8em;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
   }
 </style>
