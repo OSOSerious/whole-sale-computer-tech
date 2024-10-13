@@ -19,6 +19,7 @@
   import Testimonials from './components/Testimonials.svelte';
   import Contact from './components/Contact.svelte';
   import Footer from './components/Footer.svelte';
+  import ChatBot from './components/ChatBot.svelte';
 </script>
 
 <main>
@@ -42,6 +43,7 @@
   <Testimonials />
   <Contact />
   <Footer />
+  <ChatBot />
 </main>
 
 <style>
@@ -71,6 +73,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
   }
 
   @media (max-width: 1200px) {
