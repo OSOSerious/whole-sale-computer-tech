@@ -1,4 +1,6 @@
 <script>
+  import { theme } from './themeStore.js';
+  import ThemeSwitcher from './components/ThemeSwitcher.svelte';
   import Nav from './components/Nav.svelte';
   import Header from './components/Header.svelte';
   import Hero from './components/Hero.svelte';
@@ -20,9 +22,12 @@
   import Contact from './components/Contact.svelte';
   import Footer from './components/Footer.svelte';
   import ChatBot from './components/ChatBot.svelte';
+
+  $: themeVars = $theme;
 </script>
 
-<main>
+<main style="--primary-color: {themeVars.colors.primary}; --secondary-color: {themeVars.colors.secondary}; --background-color: {themeVars.colors.background}; --text-color: {themeVars.colors.text}; --font-main: {themeVars.fonts.main}; --font-headings: {themeVars.fonts.headings};">
+  <ThemeSwitcher />
   <Nav />
   <Header />
   <Hero />
@@ -50,10 +55,10 @@
   :global(body) {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-main, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
     line-height: 1.6;
-    color: #ffffff;
-    background-color: #121212;
+    color: var(--text-color, #ffffff);
+    background-color: var(--background-color, #121212);
   }
 
   :global(*) {
@@ -61,12 +66,12 @@
   }
 
   :global(a) {
-    color: #b9975b;
+    color: var(--primary-color, #b9975b);
     text-decoration: none;
   }
 
   :global(a:hover) {
-    color: #e0c68c;
+    color: var(--secondary-color, #e0c68c);
   }
 
   main {

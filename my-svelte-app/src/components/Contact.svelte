@@ -1,5 +1,38 @@
 <script>
-  // Add any necessary imports or logic here
+  let name = '';
+  let email = '';
+  let message = '';
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    
+    const formData = {
+      form_type: 'contact',
+      data: { name, email, message }
+    };
+
+    try {
+      const response = await fetch('http://localhost:4000/api/form_submissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ form_submission: formData }),
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message. We will get back to you soon!');
+        name = '';
+        email = '';
+        message = '';
+      } else {
+        alert('There was an error submitting your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error submitting your message. Please try again.');
+    }
+  }
 </script>
 
 <section id="contact">
@@ -19,6 +52,12 @@
         <p><a href="mailto:contact@wholesalecomputertech.com">contact@wholesalecomputertech.com</a></p>
       </div>
     </div>
+    <form on:submit={handleSubmit} class="contact-form">
+      <input type="text" bind:value={name} placeholder="Your Name" required>
+      <input type="email" bind:value={email} placeholder="Your Email" required>
+      <textarea bind:value={message} placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
     <div class="additional-info">
       <h3>Our Services</h3>
       <ul>
@@ -79,6 +118,46 @@
   .info-item a {
     color: #e0c68c;
     text-decoration: none;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #ddd;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #b9975b;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #e0c68c;
   }
 
   .additional-info {
