@@ -1,6 +1,6 @@
-# Wholesale Computer Tech Website
+# Wholesale Computer Tech
 
-This is a Svelte-based website for Wholesale Computer Tech, a company specializing in refurbished computers, technology services, and data recovery solutions in Miami and Fort Lauderdale, FL.
+Welcome to the Wholesale Computer Tech repository! This project is a Svelte-based website for Wholesale Computer Tech, a company specializing in refurbished computers, technology services, and data recovery solutions in Miami and Fort Lauderdale, FL.
 
 ## Overview
 

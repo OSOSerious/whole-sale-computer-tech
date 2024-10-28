@@ -23,7 +23,7 @@
 <nav>
   <div class="container">
     <div class="logo">
-      <a href="/"><h1>Wholesale Computer Tech</h1></a>
+      <a href="/"><img src="/images/logo.png" alt="Wholesale Computer Tech Logo" /></a>
     </div>
     <div class="menu-toggle" on:click={toggleMenu} on:keydown={handleKeydown} tabindex="0" role="button" aria-label="Toggle menu">&#9776;</div>
     <ul class:active={isMenuOpen}>
@@ -40,7 +40,7 @@
 
 <style>
   nav {
-    background-color: #1a1a1a;
+    background-color: #ffffff;
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .container {
@@ -59,15 +60,12 @@
     width: 100%;
   }
 
-  .logo a {
-    color: #b9975b;
-    text-decoration: none;
-    font-size: 1.8em;
-    font-weight: bold;
+  .logo img {
+    height: 40px;
   }
 
   .menu-toggle {
-    color: #e0c68c;
+    color: #333333;
     font-size: 24px;
     cursor: pointer;
     display: none;
@@ -85,7 +83,7 @@
   }
 
   ul li a {
-    color: #e0c68c;
+    color: #333333;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -94,7 +92,7 @@
   }
 
   ul li a:hover {
-    color: #b9975b;
+    color: #007bff;
   }
 
   @media (max-width: 768px) {
@@ -105,12 +103,13 @@
     ul {
       display: none;
       flex-direction: column;
-      background-color: #1a1a1a;
+      background-color: #ffffff;
       padding: 20px;
       position: absolute;
       top: 70px;
       left: 0;
       right: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     ul.active {

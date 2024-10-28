@@ -17,19 +17,23 @@
   #hero {
     padding: 60px 20px;
     text-align: center;
-    background-color: #2e2e2e;
+    background-color: #f8f9fa;
+    background-image: url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
   }
 
   h2 {
-    font-size: 2.5em;
-    color: #b9975b;
+    font-size: 3em;
+    color: #007bff;
     margin-bottom: 20px;
     letter-spacing: 1px;
   }
 
   p {
     font-size: 1.2em;
-    color: #ddd;
+    color: #666;
     max-width: 800px;
     margin: 0 auto 30px auto;
   }
@@ -43,20 +47,20 @@
 
   .cta-buttons a {
     padding: 15px 30px;
-    background-color: #b9975b;
+    background-color: #007bff;
     border-radius: 5px;
-    color: #1c1c1c;
+    color: #fff;
     font-size: 1em;
     transition: background-color 0.3s ease;
   }
 
   .cta-buttons a:hover {
-    background-color: #e0c68c;
+    background-color: #0056b3;
   }
 
   @media (max-width: 768px) {
     h2 {
-      font-size: 2em;
+      font-size: 2.5em;
     }
 
     p {
