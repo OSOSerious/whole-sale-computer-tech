@@ -2,22 +2,7 @@
   import Nav from './components/Nav.svelte';
   import Header from './components/Header.svelte';
   import Hero from './components/Hero.svelte';
-  import DesktopCarousel from './components/DesktopCarousel.svelte';
-  import LaptopSection from './components/LaptopSection.svelte';
-  import ServerSection from './components/ServerSection.svelte';
-  import TabletSection from './components/TabletSection.svelte';
-  import GamingComputerSection from './components/GamingComputerSection.svelte';
-  import PowerBatteryBackupSection from './components/PowerBatteryBackupSection.svelte';
-  import TonerCartridgeSection from './components/TonerCartridgeSection.svelte';
-  import Statistics from './components/Statistics.svelte';
-  import Newsletter from './components/Newsletter.svelte';
-  import DataRecoveryEstimator from './components/DataRecoveryEstimator.svelte';
-  import ProductsSales from './components/ProductsSales.svelte';
-  import Features from './components/Features.svelte';
-  import VoIPService from './components/VoIPService.svelte';
-  import CertifiedPartners from './components/CertifiedPartners.svelte';
-  import Testimonials from './components/Testimonials.svelte';
-  import Contact from './components/Contact.svelte';
+  import MainContent from './components/MainContent.svelte';
   import Footer from './components/Footer.svelte';
   import ChatBot from './components/ChatBot.svelte';
 </script>
@@ -26,22 +11,7 @@
   <Nav />
   <Header />
   <Hero />
-  <DesktopCarousel />
-  <LaptopSection />
-  <ServerSection />
-  <TabletSection />
-  <GamingComputerSection />
-  <PowerBatteryBackupSection />
-  <TonerCartridgeSection />
-  <Statistics />
-  <Newsletter />
-  <DataRecoveryEstimator />
-  <ProductsSales />
-  <Features />
-  <VoIPService />
-  <CertifiedPartners />
-  <Testimonials />
-  <Contact />
+  <MainContent />
   <Footer />
   <ChatBot />
 </main>
@@ -50,10 +20,10 @@
   :global(body) {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #ffffff;
-    background-color: #121212;
+    color: #212529;
+    background-color: #f8f9fa;
   }
 
   :global(*) {
@@ -61,12 +31,12 @@
   }
 
   :global(a) {
-    color: #b9975b;
+    color: #007bff;
     text-decoration: none;
   }
 
   :global(a:hover) {
-    color: #e0c68c;
+    color: #0056b3;
   }
 
   main {

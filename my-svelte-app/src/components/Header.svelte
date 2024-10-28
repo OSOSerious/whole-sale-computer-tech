@@ -11,12 +11,12 @@
 
 <style>
   header {
-    background-color: #1a1a1a;
-    padding: 120px 20px 80px;
+    background-color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
     position: relative;
     margin-top: 60px;
-    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('/images/header-bg.jpg');
+    background-image: url('/images/header-bg.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -29,21 +29,21 @@
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: #b9975b;
+    background-color: #007bff;
     border-radius: 2px;
   }
 
   h1 {
-    font-size: 4.8em;
+    font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #b9975b;
-    letter-spacing: 2px;
+    color: #343a40;
+    letter-spacing: 1px;
   }
 
   p {
-    font-size: 1.5em;
-    color: #e0c68c;
+    font-size: 1.2em;
+    color: #6c757d;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -51,15 +51,15 @@
 
   @media (max-width: 768px) {
     header {
-      padding: 100px 20px 60px;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 3.8em;
+      font-size: 2.5em;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
 </style>
